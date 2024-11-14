@@ -46,7 +46,7 @@ npm start
 5) Now trigger the api in payment service to see result
 
 ```
-curl http://localhost:3000/proceed-payment?sender=Paul&receiver=Sam&amount=1000
+curl "http://localhost:3000/proceed-payment?sender=Paul&receiver=Sam&amount=1000"
 ```
 
 You can see the event listened in the user service console. You can also monitor kafka through kafkdrop on port 9000.
